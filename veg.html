@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Dishes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004aad;
+            margin-top: 20px;
+        }
+
+        .dish-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .dish-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .dish-item:hover {
+            transform: scale(1.05);
+        }
+
+        .dish-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .back-button {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><mark>Veg</mark></h1>
+
+    <div class="dish-container">
+        <div class="dish-item">
+            <h2 style="color: red;">Masala Dosa</h2>
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/masala-dosa.jpg" alt="Masala Dosa">
+            <p><strong>Rs: 70</strong></p>
+            <button>Add</button>
+        </div>
+
+        <div class="dish-item">
+            <h2>Paneer Curry</h2>
+            <img src="https://yummyindiankitchen.com/wp-content/uploads/2017/04/mutter-paneer-recipe.jpg" alt="Paneer Curry">
+            <p><strong>Rs: 70</strong></p>
+            <button>Add</button>
+        </div>
+
+        <div class="dish-item">
+            <h2>Vegetable Biryani</h2>
+            <img src="https://th.bing.com/th/id/R.0f1f35f0b9377370c4a62770c407b563?rik=u1b5VYHPpZ0%2bgg&riu=http%3a%2f%2fwww.zeelskitchen.com%2fwp-content%2fuploads%2f2015%2f07%2fVegtable_Biryani.jpg&ehk=YyC6fyyAqPOxwoCcfh5%2bagrdHkkH9OFNIm8hx5pChY0%3d&risl=&pid=ImgRaw&r=0" alt="Vegetable Biryani">
+            <p><strong>Rs: 200</strong></p>
+            <button>Add</button>
+        </div>
+
+        <div class="dish-item">
+            <h2>Dal Tadka</h2>
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/dal-tadka-recipe.jpg" alt="Dal Tadka">
+            <p><strong>Rs: 150</strong></p>
+            <button>Add</button>
+        </div>
+    </div>
+
+    <div class="back-button">
+        <button><a href="Main page.html">Back to Main Menu</a></button>
+    </div>
+
+</body>
+</html>

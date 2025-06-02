@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        h1 {
+            color: #004aad;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dessert-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .dessert-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .dessert-item:hover {
+            transform: scale(1.05);
+        }
+
+        .dessert-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin-top: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            border: 3px;
+            background-color: rgb(227, 100, 100);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;"><ins>Desserts</ins></h1>
+
+    <div class="dessert-container">
+        <div class="dessert-item">
+            <h2>Gulab Jamun</h2>
+            <img src="https://th.bing.com/th/id/OIP.jHVOWwSFJmKm4WYjoOIS0QHaFk?w=244&h=183&c=7&r=0&o=7&cb=iwp2&dpr=1.5&pid=1.7&rm=3" alt="Gulab Jamun">
+            <p><strong>Rs: 70</strong></p>
+            <button>Add</button>
+        </div>
+
+        <div class="dessert-item">
+            <h2>Rasgulla</h2>
+            <img src="https://images.slurrp.com/prod/recipe_images/transcribe/dessert/Rasgulla.webp" alt="Rasgulla">
+            <p><strong>Rs: 50</strong></p>
+            <button>Add</button>
+        </div>
+
+        <div class="dessert-item">
+            <h2>Rasmalai</h2>
+            <img src="https://th.bing.com/th/id/R.f5f842cb91597146df97a40f962fa699?rik=Ovkff7B2O5HSTA&riu=http%3a%2f%2fwww.rachnas-kitchen.com%2fwp-content%2fuploads%2f2016%2f02%2fimage-4.jpeg&ehk=RrNlaewVhN38uYqx70k0WkNrcx3RyP%2fJzrFRJ76PQP8%3d&risl=&pid=ImgRaw&r=0" alt="Rasmalai">
+            <p><strong>Rs: 20</strong></p>
+            <button>Add</button>
+        </div>
+
+        <div class="dessert-item">
+            <h2>Jalebi with Rabri</h2>
+            <img src="https://i.ytimg.com/vi/xHPCCf5gKBc/maxresdefault.jpg" alt="Jalebi with Rabri">
+            <p><strong>Rs: 80</strong></p>
+            <button>Add</button>
+        </div>
+    </div>
+
+    <div class="back-button">
+        <button><a href="Main page.html">Back to Main Menu</a></button>
+    </div>
+</body>
+</html>
