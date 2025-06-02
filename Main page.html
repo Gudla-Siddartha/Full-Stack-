@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <style>
+        body {
+            background-image: url("backgroundimage1.png");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            background-color: rgb(146, 183, 146);
+            border: 2px solid red;
+            padding: 4px;
+            border-radius: 5px;
+        }
+
+        .restaurant-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .restaurant-title a {
+            font-size: 2.5em;
+            color: darkgreen;
+        }
+
+        .restaurant-title img {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .description {
+            padding: 20px;
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.7);
+            margin: 0 10%;
+            border-radius: 10px;
+        }
+
+        .menu-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .menu-section h1 {
+            color: rgb(129, 205, 15);
+            text-decoration: underline;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item h1 {
+            font-size: 1.5em;
+            color: red;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-item button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: rgb(129, 205, 15);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .menu-item button:hover {
+            background-color: rgb(100, 170, 20);
+        }
+    </style>
+</head>
+<body>
+    <div class="restaurant-title">
+        <h1><mark><a href="Restaurantname.html">Namora Sobagu</a></mark></h1>
+        <img src="resturant pic1.jpg" alt="Restaurant Image">
+    </div>
+
+    <div class="description">
+        <p>
+            Nammoora Santhe in Bengaluru offers a mix of North Indian, Chinese, Rolls, and Biryani. If you're in the mood for flavorful shawarma, grilled chicken, or tandoori chicken, this spot has those on the menu as well. Sounds like a great place for a hearty meal! A restaurant is an establishment that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast-food restaurants and cafeterias to mid-priced family restaurants, to high-priced luxury establishments.
+        </p>
+    </div>
+
+    <div class="menu-section">
+        <h1>OUR MENU</h1>
+        <div class="menu-container">
+            <div class="menu-item">
+                <h1><i>Veg:</i></h1>
+                <img src="veg pic.jpg" alt="Veg">
+                <button><a href="veg.html" >View Menu</a></button>
+            </div>
+
+            <div class="menu-item">
+                <h1><em>Non-Veg:</em></h1>
+                <img src="non_veg pic.jpg" alt="Non-Veg">
+                <button><a href="Nonveg.html">View Menu</a></button>
+            </div>
+
+            <div class="menu-item">
+                <h1><i>Starter:</i></h1>
+                <img src="starterpic.webp" alt="Starter">
+                <button><a href="Starters.html" >View Menu</a></button>
+            </div>
+
+            <div class="menu-item">
+                <h1><i>Desserts:</i></h1>
+                <img src="OIP.jpg" alt="Desserts">
+                <button><a href="Desserts.html">View Menu</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
